@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
 import { Card } from 'primereact/card';
+import striptags from 'striptags';
 
 const ExibirPrevisoes = ({ previsaoTempo }) => {
   return (
@@ -11,20 +11,20 @@ const ExibirPrevisoes = ({ previsaoTempo }) => {
         return (
           <Card
             key={index}
-            className="rounded-2xl p-4 pt-0 border-round-md"
+            className="rounded-2xl p-4 border-round-md"
             style={{
               fontFamily: 'Arial, sans-serif',
               backgroundColor: '#ecfff9',
             }}
           >
-            <div className="flex gap-7 justify-between items-center">
+            <div className="flex justify-content-evenly items-center">
               <div className="flex flex-column align-items-center justify-content-center gap-3">
                 <div className="flex flex-column gap-2 text-center">
                   <p className="m-0 font-semibold">
-                    Máxima: {item.temp_max} °C
+                    Máxima: {striptags(String(item.temp_max))} °C
                   </p>
                   <p className="m-0 font-semibold">
-                    Mínima: {item.temp_min} °C
+                    Mínima: {striptags(String(item.temp_min))} °C
                   </p>
                 </div>
                 <div className="flex items-center gap-1">
@@ -45,17 +45,22 @@ const ExibirPrevisoes = ({ previsaoTempo }) => {
                       d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z"
                     />
                   </svg>
-                  <p className="m-0 font-medium">{item.umidade}%</p>
+                  <p className="m-0 font-medium">
+                    {' '}
+                    {striptags(String(item.umidade))}%
+                  </p>
                 </div>
               </div>
 
               <div className="flex flex-column items-center">
                 <img
-                  src={`https://openweathermap.org/img/wn/${item.icon}@2x.png`}
-                  alt="Ícone do tempo"
+                  src={`https://openweathermap.org/img/wn/${striptags(
+                    item.icon
+                  )}@2x.png`}
+                  alt={item.descricao}
                 />
                 <p className="m-0 capitalize text-sm text-center">
-                  {item.descricao}
+                  {striptags(item.descricao)}
                 </p>
               </div>
             </div>

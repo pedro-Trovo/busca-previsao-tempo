@@ -5,10 +5,10 @@ const Busca = ({ setPrevisaoTempo }) => {
   const [termoBusca, setTermoBusca] = useState('São Paulo');
 
   useEffect(() => {
-    const onBuscarPrevisaoTempo = async termoDeBusca => {
+    const onBuscarPrevisaoTempo = async () => {
       // const { data } = await openweatherClient.get(`/search`, {
       //   params: {
-      //     q: termoDeBusca,
+      //     q: termoBusca,
       //   },
       // });
 
@@ -16,7 +16,13 @@ const Busca = ({ setPrevisaoTempo }) => {
       console.log(termoBusca);
     };
 
-    onBuscarPrevisaoTempo(termoBusca);
+    const debounce = setTimeout(() => {
+      if (termoBusca.length >= 3) onBuscarPrevisaoTempo();
+    }, 2000);
+
+    return () => {
+      clearTimeout(debounce);
+    };
   }, [termoBusca]);
 
   return (

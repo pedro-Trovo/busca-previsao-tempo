@@ -57,7 +57,7 @@ const ExibirPrevisoes = ({ previsaoTempo }) => {
                   src={`https://openweathermap.org/img/wn/${striptags(
                     item.icon
                   )}@2x.png`}
-                  alt={item.descricao}
+                  alt={striptags(item.descricao)}
                 />
                 <p className="m-0 capitalize text-sm text-center">
                   {striptags(item.descricao)}

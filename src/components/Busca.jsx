@@ -42,7 +42,8 @@ const Busca = ({ setPrevisaoTempo }) => {
       <input
         type="text"
         className="py-2 pl-6 pr-2 w-15rem text-base"
-        placeholder="Nome de uma cidade...."
+        placeholder="Insira o nome de uma cidade...."
+        value={termoBusca}
         onChange={e => setTermoBusca(e.target.value)}
       />
     </div>

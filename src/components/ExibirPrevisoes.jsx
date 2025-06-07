@@ -17,7 +17,7 @@ const ExibirPrevisoes = ({ previsaoTempo }) => {
               backgroundColor: '#ecfff9',
             }}
           >
-            <div className="flex gap-7 justify-between items-center">
+            <div className="flex justify-content-evenly items-center">
               <div className="flex flex-column align-items-center justify-content-center gap-3">
                 <div className="flex flex-column gap-2 text-center">
                   <p className="m-0 font-semibold">

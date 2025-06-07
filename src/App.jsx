@@ -9,7 +9,7 @@ function App() {
   const [previsaoTempo, setPrevisaoTempo] = useState([]);
 
   return (
-    <div>
+    <div className="flex flex-column align-items-center gap-5 mt-8">
       <Busca setPrevisaoTempo={setPrevisaoTempo} />
       <ExibirPrevisoes previsaoTempo={previsaoTempo} />
     </div>

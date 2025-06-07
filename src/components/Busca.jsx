@@ -6,14 +6,11 @@ const Busca = ({ setPrevisaoTempo }) => {
 
   useEffect(() => {
     const onBuscarPrevisaoTempo = async () => {
-      // const { data } = await openweatherClient.get(`/search`, {
-      //   params: {
-      //     q: termoBusca,
-      //   },
-      // });
+      const { data } = await openweatherClient.get(
+        `/search?query=${termoBusca}`
+      );
 
-      //setPrevisaoTempo(data);
-      console.log(termoBusca);
+      setPrevisaoTempo(data);
     };
 
     const debounce = setTimeout(() => {

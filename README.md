@@ -95,3 +95,4 @@ npm run dev
 http://localhost:5173/
 ```
 # Imagens do Projeto
+<img alt="Exibir Previsão" src="readme-img/exibiPrevTemp.png">

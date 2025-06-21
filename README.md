@@ -58,26 +58,27 @@ Este projeto utiliza a biblioteca **React**, com o empacotador **Vite**, para cr
 2. Faça um cadastro gratuito no site da [OpenWeather](https://openweathermap.org/api) para gerar uma chave de API
 
 # Inicializando o projeto
-1. Faça um `git clone` do repositório:
+Faça um `git clone` do repositório:
 ```console
 git clone https://github.com/pedro-Trovo/busca-previsao-tempo
 ```
-2. Acesse a pasta `backend`.
-3. Crie o arquivo .env e cole sua chave da OpenWeather:
+## Backend
+1. Acesse a pasta `backend`.
+2. Crie o arquivo .env e cole sua chave da OpenWeather:
 ```console
 OPENWEATHER_KEY=sua_chave_aqui
 ```
-4. Instale as dependências 
+3. Instale as dependências 
 ```console
 npm install
 ```
-5.  rode o servidor:
+4.  rode o servidor:
 ```console
 npm start
 ```
-6.  O backend estará disponível em:
+5.  O backend estará disponível em:
 ```console
-http://localhost:3000/search?cidade=Sao Pau
+http://localhost:3000/search?query=NomeDaCidade
 ```
 ## Frontend
 1. Acesse a pasta `frontend`.

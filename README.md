@@ -38,7 +38,7 @@ Este projeto utiliza a biblioteca **React**, com o empacotador **Vite**, para cr
     </td>
   </tr>
   <tr>
-    <th>Frameworks / Bibliotecas</th>
+    <th>Ferramentas de Desenvolvimento</th>
     <td>
       <a href="https://react.dev/">
         <img alt="React" src="https://img.shields.io/badge/react-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black"/>
@@ -88,9 +88,23 @@ Este projeto utiliza a biblioteca **React**, com o empacotador **Vite**, para cr
 
 
 # Contribuidores
-<a href="https://github.com/pedro-Trovo/busca-previsao-tempo/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=pedro-Trovo/busca-previsao-tempo" />
-</a>
+<table>
+    <td align="center">
+      <a href="https://github.com/LucasOkokama">
+        <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/161041526?h=80&w=80&fit=cover&mask=circle" alt="Lucas Okokama" />
+        <br />
+        <sub><b>Lucas Okokama</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/pedro-Trovo">
+        <img src="https://images.weserv.nl/?url=avatars.githubusercontent.com/u/161767490?h=80&w=80&fit=cover&mask=circle" alt="Pedro Trovo" />
+        <br />
+        <sub><b>Pedro Trovo</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 # Pré-requisitos
 1. Instale o [`Node.js`](https://nodejs.org/en) e certifique-se de que ele inclua o `npm`.
@@ -134,4 +148,6 @@ npm run dev
 http://localhost:5173/
 ```
 # Imagens do Projeto
-<img alt="Exibir Previsão" src="readme-img/exibiPrevTemp.png">
+<div align="center">
+  <img alt="Exibir Previsão" src="readme-img/exibiPrevTemp.png" />
+</div>

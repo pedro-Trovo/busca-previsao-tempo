@@ -17,6 +17,13 @@ const ExibirPrevisoes = ({ previsaoTempo }) => {
               backgroundColor: '#ecfff9',
             }}
           >
+            <p className="m-0 font-medium text-center mb-3">
+              {new Date(item.data).toLocaleString('pt-BR', {
+                dateStyle: 'full',
+                timeStyle: 'short'
+              })}
+            </p>
+
             <div className="flex justify-content-evenly items-center">
               <div className="flex flex-column align-items-center justify-content-center gap-3">
                 <div className="flex flex-column gap-2 text-center">
